@@ -1,10 +1,79 @@
-.hello{
-    color: yellow;
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/761/613/75/abstract-sky-sun-clouds-wallpaper-thumb.jpg');
+   
+    padding: 100px;
+      background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+   
+}
+.inputHeader{
+    text-align: center;
+}
+.cityInput{
+    margin: 0 auto;
 }
 .header{
-    color: brown;
-    size: 400px;
+    color: white;
 }
-button{
-    background-color: red;
+form{
+    margin-bottom: 20px;
+}
+input{
+    border-radius: 5px; 
+}
+.submitbutton{
+ background-color: rgba(52, 152, 219, 0.9); 
+    border: none;
+    border-radius: 5px; 
+}
+.weatherDiv{
+    margin: 0 auto;
+    color: white;
+    height: 400px;
+    width: 70%;
+    background-color: rgba(226, 239, 248, 0.1);
+    border-radius: 20px;
+}
+.cityInput{
+    width: auto;
+}
+.text{
+    height: 200px;
+}
+
+.flex {
+    display: flex;
+    gap: 10px; /* Use space-evenly here */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Use column for flex-direction */
+}
+.container{
+    min-width: 600px;
+    margin: 0 auto;
+
+}
+.container .col{
+    padding: 20px;
+}
+.descOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.bottom{
+    font-size: 3rem;
+}
+@media (max-width : 500px){
+    .container{
+        min-width: 600px;
+        height: auto;
+
+    }
 }

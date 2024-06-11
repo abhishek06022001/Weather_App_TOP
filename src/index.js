@@ -1,20 +1,7 @@
- import _ from 'lodash';
-import printMe from './print.js';
-import './styles.css';
+import {render} from "./Ui_controls";
 
- function component() {
-   const element = document.createElement('div');
-  const btn = document.createElement('button');
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "./styles.css";
 
-   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
-
-  btn.innerHTML = 'Click me and check the console!';
-  btn.onclick = printMe;
-
-  element.appendChild(btn);
-
-   return element;
- }
-
- document.body.appendChild(component());
+render();
