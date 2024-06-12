@@ -28,7 +28,7 @@ function updateCard(data) {
   message.textContent = data.message;
   feelslike_C.textContent ="Feels Like "+ data.feelslike_c + " °C";
   feelslike_F.textContent = "Feels Like "+data.feelslike_f + " °F";
-  humidity.textContent = `humidity : ${data.humidity}`;
+  humidity.textContent = `humidity : ${data.humidity} %`;
   place.textContent = `${data.country},${data.city}` ;
   tempC.textContent = data.temp_c + " °C";
   if (!data.isday) {

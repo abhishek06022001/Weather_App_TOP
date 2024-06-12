@@ -43,18 +43,20 @@ function createDisplayCard(){
   // }
 }
 function tempCard(){
- const infoDiv = document.querySelector('.descOne');
+ const infoDiv1 = document.querySelector('.descOne');
+ const infoDiv2 = document.querySelector('.descTwo');
+ const infoDiv3 = document.querySelector('.descThree');
  const place = document.createElement('h3'); place.classList.add('place');
  const feelsC = document.createElement('h6'); feelsC.classList.add('feelsC');
  const feelsF = document.createElement('h6');feelsF.classList.add("feelsF");
  const humid = document.createElement('h3');humid.classList.add('humid');
  const message = document.createElement('h3');
  message.classList.add('message');
- infoDiv.appendChild(place);
- infoDiv.appendChild(feelsC);
- infoDiv.appendChild(feelsF);
- infoDiv.appendChild(humid);
- infoDiv.appendChild(message);
+ infoDiv1.appendChild(place);
+ infoDiv2.appendChild(feelsC);
+ infoDiv2.appendChild(feelsF);
+ infoDiv3.appendChild(humid);
+ infoDiv3.appendChild(message);
  
 }
 
