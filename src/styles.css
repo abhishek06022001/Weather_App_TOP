@@ -1,111 +1,95 @@
-*{
+* {
     box-sizing: border-box;
-    padding: 0 ;
-    margin: 0 ;
+    padding: 0;
+    margin: 0;
 }
-html{
-    /* border: 3px solid yellow; */
+
+html {
+    color: white;
 }
-.grid{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px; */
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-    gap: 20px;
-    justify-content: space-evenly;
-}
-.col{
-    /* border: 3px solid white;  */
-    min-width: 300px;
-    min-height: 300px;
-    background-color: rgba(193, 43, 212, 0.3);
-    border-radius: 20px;
-    z-index: 12;
-}
+
 body {
-    /* color: white; */
-    /* background-image: url('https://c4.wallpaperflare.com/wallpaper/761/613/75/abstract-sky-sun-clouds-wallpaper-thumb.jpg'); */
-    background-image: url('https://i02.appmifile.com/images/2019/06/27/3dfbd421-111a-484b-a250-5521fe7e49cf.jpg');
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/761/613/75/abstract-sky-sun-clouds-wallpaper-thumb.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-    display: flex;justify-content: center;align-items: center;
-    /* border: 3px solid green; */
-    margin: 0; /* Make sure to reset default margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 300px 0;
 }
-#mainBox{
-/* border: 3px solid pink; height: auto ; width:  auto; */
+
+#mainBox {
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Background color for better visibility */
+    border-radius: 10px;
 }
-.inputHeader{
+
+.inputHeader {
     text-align: center;
-}
-.cityInput{
-    margin: 0 auto;
-}
-.header{
-    /* color: white; */
-}
-form{
     margin-bottom: 20px;
+    height: 100px;
+    /* Remove the border if not needed */
 }
-input{
-    border-radius: 5px;
-    width: 20px; 
+
+.header {
+    font-size: 2rem; /* Adjust font size for better visibility */
 }
-.submitbutton{
- background-color: rgba(52, 152, 219, 0.9); 
-    border: none;
-    border-radius: 5px; 
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
 }
-.weatherDiv{
-   
-}
-.cityInput{
-    width: auto;
-}
-.text{
-    height: 200px;
+
+.col {
+    flex: 1 1 300px; /* Allow columns to grow and shrink */
+    min-height: 300px;
+    background-color: rgba(193, 43, 212, 0.3);
+    border-radius: 20px;
 }
 
 .flex {
     display: flex;
-    /* gap: 10px; Use space-evenly here */
     padding: 20px;
     align-items: center;
     justify-content: center;
-    flex-direction: column; /* Use column for flex-direction */
-}
-.container{
-    min-width: 600px;
-    margin: 0 auto;
-
+    flex-direction: column;
 }
 
-
-.descOne,.descTwo,.descThree{
+.descOne, .descTwo, .descThree {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
-.bottom{
+
+.bottom {
     font-size: 3rem;
 }
-/* MEDIA QUERIES  */
+
+/* MEDIA QUERIES */
 @media (max-width: 600px) {
-    .grid{
+    .grid {
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: repeat(4, 1fr);
         grid-template-columns: 1fr;
         gap: 10px;
     }
-    .col{
-        height: 40vh;width: 80vw;
+
+    .col {
+        height: 40vh;
+        width: 80vw;
+    }
+
+    .header {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
     }
 }
