@@ -1,6 +1,7 @@
 import getWeather from "./weather_api";
 const showObject = async (location) => {
   const weatherAllData = await getWeather(location);
+  await delay(3000);
   console.log(weatherAllData);
   document.querySelector('input').value= "";
   return {
@@ -17,5 +18,8 @@ const showObject = async (location) => {
     isday: weatherAllData.current.is_day
   };
 };
+function delay(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
 
 export {showObject}

@@ -21,13 +21,16 @@ const render = () => {
     // alert("onclick complete thread will get free after this ")
   };
 };
-function startLoader() {
-  
-  
+
+function startLoader(){
+  const loading = document.querySelector('.loading');
+  loading.style.display = "flex";
 }
 
-function stopLoader() {
-  
+function stopLoader() 
+{
+const loading = document.querySelector(".loading");
+loading.style.display = "none";  
 }
 function updateCard(data) {
   // alert(" updateCard called");
