@@ -22,13 +22,12 @@ const render = () => {
   };
 };
 function startLoader() {
-  // alert("Loader Called");
-
-  document.querySelector('body').classList.add('loader');
+  
+  
 }
+
 function stopLoader() {
-  // alert("Loader stopped");
-    document.querySelector("body").classList.remove("loader");
+  
 }
 function updateCard(data) {
   // alert(" updateCard called");

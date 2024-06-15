@@ -6,30 +6,43 @@
 }
 input {
   width: 10rem;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.2rem;
+}
+input:focus {
+  outline: none;
+}
 
+body.loading {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent grey background */
+  overflow: hidden; /* Prevent scrolling while loader is shown */
 }
 .form-label {
   color: rgb(53, 3, 3) !important;
 }
-.label, button , input {
+.label,
+button,
+input {
   font-size: inherit;
 }
-.loader{
+.loader {
   background-color: white;
-  width: 100vw; height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 body {
   background-image: url("https://images.pexels.com/photos/3774895/pexels-photo-3774895.png?cs=srgb&dl=pexels-oandremoura-3774895.jpg&fm=jpg");
   background-size: cover;
   background-repeat: no-repeat;
   /* idk below property bro Abhishek */
-  background-attachment: scroll; 
+  background-attachment: scroll;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#mainBox { 
+#mainBox {
   display: flex;
   height: 90%;
   width: 90%;
@@ -40,23 +53,25 @@ body {
   align-items: center;
 }
 .header {
-  font-size: 2rem;
+  font-size: 2rem; margin-bottom: 0.2rem;
   text-align: center;
 }
 .grid {
   width: 70%;
   height: 60%;
   display: flex;
-  overflow-x: scroll; scrollbar-width: none;
+  overflow-x: scroll;
+  scrollbar-width: none;
   overflow-y: hidden;
   gap: 3rem;
   flex-wrap: nowrap;
 }
-.col { 
+.col {
   font-size: 1.5rem;
   border-radius: 2rem;
   min-width: 15rem;
-  text-align: center; padding: 0.5rem;
+  text-align: center;
+  padding: 0.5rem;
   height: 13rem;
   display: flex;
   justify-content: space-evenly;
@@ -65,11 +80,11 @@ body {
   background-color: rgba(228, 234, 235, 0.421);
   transition: all 0.5s ease;
 }
-.bottom{
+.bottom {
   font-size: 3.2rem;
 }
-.col:hover{
-     background-color: rgba(103, 214, 234, 0.421);
+.col:hover {
+  background-color: rgba(103, 214, 234, 0.421);
 }
 @media (min-width: 800px) {
   html {
@@ -92,8 +107,9 @@ body {
     min-height: 100%;
     min-width: 100%;
   }
-  img{
-    width: 4rem; height: 4rem;
+  img {
+    width: 4rem;
+    height: 4rem;
   }
 }
 @media (max-width: 400px) {
