@@ -1,9 +1,11 @@
 import getWeather from "./weather_api";
-
 const showObject = async (location) => {
   const weatherAllData = await getWeather(location);
-    // console.log(weatherAllData);
+  console.log(weatherAllData);
+  document.querySelector('input').value= "";
   return {
+    last_updated : weatherAllData.current.last_updated,
+    localtime : weatherAllData.location.localtime,
     country: weatherAllData.location.country,
     city: weatherAllData.location.name,
     temp_c: weatherAllData.current.temp_c,

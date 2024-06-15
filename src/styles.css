@@ -1,97 +1,119 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    color: rgb(53, 3, 3);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: rgb(53, 3, 3);
 }
-
-html {
-    
-    font-size: 100%;
-}
-
 input {
-    width: 6rem;
+  width: 10rem;
+
 }
-.form-label{
-    color: rgb(53, 3, 3) !important;
+.form-label {
+  color: rgb(53, 3, 3) !important;
+}
+.label, button , input {
+  font-size: inherit;
+}
+.loader{
+  background-color: white;
+  width: 100vw; height: 100vh;
 }
 body {
-    /* background: linear-gradient(to right, rgb(49, 4, 75), rgb(11, 180, 202)); */
-    background-image:  url('https://images.pexels.com/photos/3774895/pexels-photo-3774895.png?cs=srgb&dl=pexels-oandremoura-3774895.jpg&fm=jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
-    border: 2px solid black;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-image: url("https://images.pexels.com/photos/3774895/pexels-photo-3774895.png?cs=srgb&dl=pexels-oandremoura-3774895.jpg&fm=jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* idk below property bro Abhishek */
+  background-attachment: scroll; 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-#mainBox {
-    display: flex;
-    height: 30rem;
-    width: 90%;
-    gap: 1rem;
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+#mainBox { 
+  display: flex;
+  height: 90%;
+  width: 90%;
+  gap: 1rem;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
-.inputHeader {
-    /* Additional styles if needed */
-}
-
 .header {
-    font-size: 2rem;
-    text-align: center;
+  font-size: 2rem;
+  text-align: center;
 }
-
 .grid {
-    width: 70vw; height: 60vh; display: flex; overflow-x: scroll; overflow-y: hidden;  gap: 3rem; flex-wrap: nowrap;
+  width: 70%;
+  height: 60%;
+  display: flex;
+  overflow-x: scroll; scrollbar-width: none;
+  overflow-y: hidden;
+  gap: 3rem;
+  flex-wrap: nowrap;
 }
-
-.col {
-    border: 2px solid brown; font-size: 1.5rem;
-    border-radius: 2rem;
-    height: 100%;  display: flex; justify-content: space-evenly; align-items: center; flex-direction: column;
-    background-color: rgba(195, 213, 214, 0.281);
+.col { 
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  min-width: 15rem;
+  text-align: center; padding: 0.5rem;
+  height: 13rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(228, 234, 235, 0.421);
+  transition: all 0.5s ease;
 }
-
+.bottom{
+  font-size: 3.2rem;
+}
+.col:hover{
+     background-color: rgba(103, 214, 234, 0.421);
+}
 @media (min-width: 800px) {
-    html {
-        font-size: 30px;
-    }
-    .col{
-        min-width: 30%;
-    }
+  html {
+    font-size: 30px;
+  }
+  .col {
+    min-width: 15rem;
+  }
 }
-
 @media (max-width: 500px) {
-    html {
-        font-size: 18px;
-    }
-    .grid{
-        flex-direction: column; overflow-y: scroll; overflow-x: hidden;
-    }
-    .col{
-        min-height: 100%; 
-    }
+  html {
+    font-size: 18px;
+  }
+  .grid {
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .col {
+    min-height: 100%;
+    min-width: 100%;
+  }
+  img{
+    width: 4rem; height: 4rem;
+  }
 }
-
 @media (max-width: 400px) {
-    html {
-        font-size: 12px;
-    }
-     .grid{
-        flex-direction: column; overflow-y: scroll; overflow-x: hidden;
-    }
+  html {
+    font-size: 30px;
+    font-size: 15px;
+  }
+  .grid {
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .col {
+    min-height: 15rem;
+    min-width: 100%;
+  }
 }
-@media(min-width: 1200px){
-    .col{
-        min-width: 30%;
-    }
+@media (min-width: 1200px) {
+  .col {
+    min-width: 15rem;
+    width: 3rem;
+  }
 }

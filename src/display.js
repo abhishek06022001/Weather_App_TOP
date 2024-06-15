@@ -46,17 +46,21 @@ function tempCard(){
  const infoDiv1 = document.querySelector('.descOne');
  const infoDiv2 = document.querySelector('.descTwo');
  const infoDiv3 = document.querySelector('.descThree');
- const place = document.createElement('h3'); place.classList.add('place');
- const feelsC = document.createElement('h6'); feelsC.classList.add('feelsC');
- const feelsF = document.createElement('h6');feelsF.classList.add("feelsF");
- const humid = document.createElement('h3');humid.classList.add('humid');
- const message = document.createElement('h3');
+ const place = document.createElement('h5'); place.classList.add('place');
+ const feelsC = document.createElement('h5'); feelsC.classList.add('feelsC');
+ const feelsF = document.createElement('h5');feelsF.classList.add("feelsF");
+ const localtime = document.createElement('h5');localtime.classList.add("localtime");
+ const last_updated = document.createElement('h5');last_updated.classList.add("last_updated");
+ const humid = document.createElement('h5');humid.classList.add('humid');
+ const message = document.createElement('h5');
  message.classList.add('message');
  infoDiv1.appendChild(place);
  infoDiv2.appendChild(feelsC);
  infoDiv2.appendChild(feelsF);
+ infoDiv2.appendChild(localtime);
  infoDiv3.appendChild(humid);
  infoDiv3.appendChild(message);
+ infoDiv3.appendChild(last_updated);
  
 }
 

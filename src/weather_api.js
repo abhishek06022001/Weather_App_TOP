@@ -7,6 +7,5 @@ export default async function getWeather( location){
   }
   const data = await response.json();
    return data;
-  
 }
  
